@@ -1,45 +1,52 @@
-#content {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+header,
+footer {
+	background-color: turquoise;
+	text-align: center;
+	padding: .5rem;
 }
 
 header,
-footer,
-h1,
-h2 {
-    background-color: turquoise;
-    text-align: center;
-    font-family: 'Marko One', serif;
-    margin: 1.5rem;
-    padding: 1em;
-    border-radius: 10px;
+main,
+footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	font-family: 'Marko One', serif;
+
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 1em;
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
 }
 
-h4,
-p {
-    background-color: gray;
-    padding: 1rem;
-    margin: .5rem;
+main section a {
+	text-decoration: none;
+	font-family: 'Gabriela', serif;
+	padding: 1rem;
 }
 
-.Design {
-    background-color: lightgray;
-    border: .2rem solid black;
-    padding: .5rem;
-    margin: .5rem;
-    border-radius: 20px;
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
 
+main section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+}
+
+main section .picture {
+	padding-top: 1rem;
 }
 
 img {
-    width: 200px;
+	width: 200px;
 }
