@@ -1,0 +1,7 @@
+@media (min-width: 32.5em){
+    header img {
+        width: 20%;
+        height: 20%;
+        border-radius: 10px;
+    }
+}
