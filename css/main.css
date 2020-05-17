@@ -6,10 +6,6 @@ body {
     margin: 50px auto;
 }
 
-header {
-    background-color: turquoise;
-}
-
 h1 {
     text-align: center;
     font-family: 'Marko One', serif;
@@ -30,6 +26,7 @@ footer {
     margin: 1.5rem;
     padding: 1em;
     border-radius: 10px;
+    background-color: turquoise;   
 }
 
 main {
@@ -41,7 +38,6 @@ main {
 header img {
     width: 20%;
     height: 20%;
-    float: right;
     border-radius: 10px;
 }
 
@@ -53,6 +49,5 @@ img {
 }
 
 footer {
-    background-color: turquoise;
     text-align: center;
 }
