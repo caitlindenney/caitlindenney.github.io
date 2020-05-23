@@ -1,17 +1,17 @@
 body {
-    font-family: serif;
-    background-color: #c5cbd3;
+	font-family: serif;
+	background-color: #c5cbd3;
 	padding: 0;
-    margin: 0;
+	margin: 0;
 }
 
 header {
-    font-family: 'Marko One', serif;
-    background-color: #7392b7;
+	font-family: 'Marko One', serif;
+	background-color: #7392b7;
 	padding: 5px 0;
 	display: flex;
-	align-items:center;
-	justify-content:center;
+	align-items: center;
+	justify-content: center;
 }
 
 header img {
@@ -32,77 +32,89 @@ header img {
 .m {
 	font-style: italic;
 	letter-spacing: 1pt;
-	color:black;
+	color: black;
 	margin-left: 20px;
 	font-size: .9rem;
 }
 
 nav {
-    margin: 0 auto;
-    max-width: 760px;
-    background-color: #1d3461;
-    color: white;
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #1d3461;
+	color: white;
 }
 
 .navigation {
 
-    list-style-type: none;
-    margin: 0;
+	list-style-type: none;
+	margin: 0;
 
 }
 
 .navigation li:first-child {
-    display: block;
+	display: block;
 }
 
 .navigation li {
-    display: none;
+	display: none;
 }
 
 .navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
 }
 
 .navigation a:hover {
-    background-color: #8d6a9f;
+	background-color: #8d6a9f;
 }
 
 .responsive li {
-    display: block;
+	display: block;
 }
 
 a:active {
-    text-decoration: underline;
-    background-color:#8d6a9f ;
-  }
+	text-decoration: underline;
+	background-color: #8d6a9f;
+}
 
 main {
-    text-align: center;
-    font-family: 'Gabriela', serif;
+	text-align: center;
+	font-family: 'Gabriela', serif;
 }
+
 #banner {
 	display: none;
+	margin: 10px auto;
+	padding: 15px;
+	background-color: #554F80;
+	font-weight: bold;
+	font-size: 1.em;
+	color: white;
 }
+
 .box {
-    display: block;
-    margin: 10px auto;
-    padding: 15px;
-    background-color: #9CAFC5;
+	display: block;
+	margin: 10px auto;
+	padding: 15px;
+	background-color: #9CAFC5;
 }
+
 .herodiv {
-    margin: 1px auto;
-    position: relative;
+	margin: 1px auto;
+	position: relative;
 }
-.town{
-    max-width: 100vh;
+
+.town {
+	max-width: 100%;
 }
-h2, p {
-    margin: 0;
+
+h2,
+p {
+	margin: 0;
 }
 
 .stats {
@@ -116,10 +128,13 @@ h2, p {
 	opacity: 1;
 }
 
-
+.flex,
+.boxweather {
+	display: none;
+}
 
 .level1 {
-	text-align:justify;
+	text-align: justify;
 	font-size: .85em;
 	max-width: 100vh;
 	margin: 1rem;
@@ -127,29 +142,41 @@ h2, p {
 }
 
 .level1 .img3 {
-	float:right;
+	float: right;
 	padding: .25rem;
-  margin: .5rem .25rem .5rem 1.25rem;
+	margin: .5rem .25rem .5rem 1.25rem;
 }
+
 section-2 {
-	width: max-content;
-	margin: 0 auto;
-	padding: 1rem;
+	width: 100%;
+margin-right: 10px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-
+	
 }
-
+.contacts{
+	margin-left: 20px;
+}
 .gmap {
 	margin: 10px 0 30px;
 	border: 1px solid #000;
 
 }
 
+.icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px;
+  }
+  .socialmedia {
+	margin-right: 25px;
+	margin-top: 0px;
+  }
 footer {
-    font-family: 'Marko One', serif;
-    background-color: #7392b7;
-    text-align: center;
+	font-family: 'Marko One', serif;
+	background-color: #7392b7;
+	text-align: center;
 }
