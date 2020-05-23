@@ -21,6 +21,12 @@
 		display: none;
 	}
 
+	.boxweather {
+		display: block;
+		margin: 10px auto;
+		padding: 15px;
+		background-color: #9CAFC5;
+	}
 	.flex {
 		display: flex;
 		flex-flow: row wrap;
