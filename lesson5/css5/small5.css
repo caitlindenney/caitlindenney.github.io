@@ -92,7 +92,7 @@ main {
 	padding: 15px;
 	background-color: #554F80;
 	font-weight: bold;
-	font-size: 1.em;
+	font-size: 1em;
 	color: white;
 }
 
@@ -157,15 +157,22 @@ section-2 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 }
-.contacts{
-	margin-left: 20px;
-}
+
 .gmap {
 	margin: 10px 0 30px;
 	border: 1px solid #000;
 
+}
+
+.contacts {
+	margin-left: 20px;
+}
+
+.socialmedia {
+	margin-right: 25px;
+	margin-top: 0px;
 }
 
 .icon {
@@ -173,11 +180,8 @@ section-2 {
 	height: 30px;
 	border-radius: 5px;
 	box-shadow: 4px 4px 4px;
-  }
-  .socialmedia {
-	margin-right: 25px;
-	margin-top: 0px;
-  }
+}
+
 footer {
 	font-family: 'Marko One', serif;
 	background-color: #7392b7;
