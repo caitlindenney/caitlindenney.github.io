@@ -1,8 +1,49 @@
 @media only screen and (min-width: 50em) {
-
-  .box {
-    max-width: 700px;
+  .container {
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
   }
+
+  img {
+    max-width: 290px;
+  }
+
+  .clear {
+    grid-column: 1/2;
+  }
+
+  .fog {
+    grid-column: 2/3;
+  }
+
+  .hot {
+    grid-column: 3/4;
+  }
+
+  .lightning {
+    grid-column: 1/2;
+  }
+
+  .rain {
+    grid-column: 2/3;
+  }
+
+  .snow {
+    grid-column: 3/4;
+  }
+
+  .sunny {
+    grid-column: 1/2;
+  }
+
+  .tornado {
+    grid-column: 2/3;
+  }
+
+  .windy {
+    grid-column: 3/4;
+  }
+
 
   footer {
     max-width: 800px;

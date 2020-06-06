@@ -1,4 +1,4 @@
-main{
+main {
     max-width: 400px;
     margin: 0 auto;
     display: flex;
@@ -6,17 +6,17 @@ main{
     align-items: center;
 }
 
-h1{
+h1 {
     font-size: 1.3rem;
 }
 
-img{
+img {
     border: 1px solid black;
     padding: 2px;
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
-img[data-src]{
+img[data-src] {
     filter: blur(0.2em);
 }
