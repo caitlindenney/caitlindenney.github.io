@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Preston Town</title>
+    <meta name="description" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela%7cMarko+One&display=swap" rel="stylesheet">
+    <link href="css/small8.css" rel="stylesheet">
+    <link href="css/medium8.css" rel="stylesheet">
+    <link href="css/large8.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img src="images/weather-logo.png" alt="logo, cloud with a quastion mark in the middle of the cloud.">
+        </picture>
+        <section class="headings">
+            <h1>Get Weather Correct</h1>
+            <div class="m">Did I Get the Weather Correct?</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation responsive">
+            <li><a class="ham" href="#">&#9776;Home</a></li>
+            <li><a class="ham" href="#">Preston</a></li>
+            <li><a class="ham" href="#">Soda Springs</a></li>
+            <li><a class="ham" href="#">Fish Haven</a></li>
+            <li><a class="ham" href="#">Storm Center</a></li>
+            <li><a class="ham" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <script src="js/responsive.js"></script>
+
+    <main>
+        <form>
+            <ul>
+                <li><label>Full Name:<input type="text" name="full"></label>
+
+                </li>
+                <li><label>eMail:<input type="email" name="email" placeholder="user@email.org"></label><br></li>
+                <li><label>Phone:<input type="tel" name="phone" placeholder="###-###-####"></label><br></li>
+                <li><label>Zip Code:<input type="number" name="num" pattern="(\d{5}([\-]\d{4})?)"autocomplete="shipping postal-codep"></label><br></li>
+                <li><label>Date Picker:<input type="date" name="theDate"></label><br></li>
+                <li><label>storm type<input type="text" name="storm"></label>
+
+                </li>
+                <li><datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist></li>
+                <li><label>Browser: <input name="browsers" list="browserlist"></label>
+                    <datalist id="browserlist">
+                        <option value="Google Chrome">
+                        <option value="Mozilla Firefox">
+                        <option value="Microsoft Edge">
+                    </datalist></li>
+                <li>
+                <legend>Radio Buttons <em>(Choose one)</em></legend>
+                <div class="selection">
+                    <input type="radio" id="time1" name="time" value="8" checked>
+                    <label for="time1"> 8:00 a.m. </label>
+                </div>
+                <div class="selection">
+                    <input type="radio" id="time2" name="time" value="9">
+                    <label for="time2"> 9:00 a.m. </label>
+                </div>
+                <div class="selection">
+                    <input type="radio" id="time3" name="time" value="10">
+                    <label for="time3">10:00 a.m.</label>
+                </div>
+                <div class="selection">
+                    <input type="radio" id="time4" name="time" value="11">
+                    <label for="time4">11:00 a.m.</label>
+                </div></li>
+                <li>
+                    <label>Message: <textarea id="msg" name="user_msg"></textarea></label>
+                </li>
+                <li class=button">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+
+    </main>
+
+    <footer>
+        &copy; 2020 | Caitlin Denney | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <p>Last Updated: <span id="date"></span></p>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Gabriela,  Marko One']
+            }
+        });
+    </script>
+</body>
+
+</html>
