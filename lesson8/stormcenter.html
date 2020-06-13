@@ -12,8 +12,6 @@
     <link href="css/small8.css" rel="stylesheet">
     <link href="css/medium8.css" rel="stylesheet">
     <link href="css/large8.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -41,64 +39,75 @@
     <script src="js/responsive.js"></script>
 
     <main>
-        <form>
-            <ul>
-                <li><label>Full Name:<input type="text" name="full"></label>
+        <div class="container box">
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <div><label>Full Name:<input type="text" name="full" minlength="5" pattern="[Aa-Zz]"
+                                required></label></div>
 
-                </li>
-                <li><label>eMail:<input type="email" name="email" placeholder="user@email.org"></label><br></li>
-                <li><label>Phone:<input type="tel" name="phone" placeholder="###-###-####"></label><br></li>
-                <li><label>Zip Code:<input type="number" name="num" pattern="(\d{5}([\-]\d{4})?)"autocomplete="shipping postal-codep"></label><br></li>
-                <li><label>Date Picker:<input type="date" name="theDate"></label><br></li>
-                <li><label>storm type<input type="text" name="storm"></label>
+                    <div><label>Email:<input type="email" name="email" placeholder="user@email.com"></label></div>
 
-                </li>
-                <li><datalist id="tickmarks">
-                        <option value="0">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="7">
-                        <option value="8">
-                        <option value="9">
-                        <option value="10">
-                    </datalist></li>
-                <li><label>Browser: <input name="browsers" list="browserlist"></label>
-                    <datalist id="browserlist">
-                        <option value="Google Chrome">
-                        <option value="Mozilla Firefox">
-                        <option value="Microsoft Edge">
-                    </datalist></li>
-                <li>
-                <legend>Radio Buttons <em>(Choose one)</em></legend>
-                <div class="selection">
-                    <input type="radio" id="time1" name="time" value="8" checked>
-                    <label for="time1"> 8:00 a.m. </label>
-                </div>
-                <div class="selection">
-                    <input type="radio" id="time2" name="time" value="9">
-                    <label for="time2"> 9:00 a.m. </label>
-                </div>
-                <div class="selection">
-                    <input type="radio" id="time3" name="time" value="10">
-                    <label for="time3">10:00 a.m.</label>
-                </div>
-                <div class="selection">
-                    <input type="radio" id="time4" name="time" value="11">
-                    <label for="time4">11:00 a.m.</label>
-                </div></li>
-                <li>
-                    <label>Message: <textarea id="msg" name="user_msg"></textarea></label>
-                </li>
-                <li class=button">
-                    <button type="submit">Submit</button>
-                </li>
-            </ul>
-        </form>
+                    <div><label>Phone:<input type="tel" name="phone" required></label></div>
 
+                    <div><label>Zip Code:<input type="number" name="num" required></label></div>
+
+                    <div><label>Storm Date:<input type="date" name="theDate"></label><br></div>
+
+                    <div><label>Storm Type:<input name="storm" list="stormlist"></label>
+                        <datalist id="stormlist">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </div>
+
+                    <div> <label class="flexly">Storm Severity: &nbsp;&nbsp;&nbsp;<input type="range"
+                                name="stormSeverity" value="5" min="1" max="10" step="1" list="tickmarks"
+                                oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span
+                                id="severity">5</span></label>
+                        <datalist id="tickmarks">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    </div>
+                    <script src="js/severity.js"></script>
+
+                    <div><label for="region">Storm Region:</label>
+                        <select name="region" id="region">
+                            <option selected disabled>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda Springs">Soda Springs</option>
+                            <option value="fish Haven">Fish Haven</option>
+                        </select>
+                    </div>
+
+                    <div><label>User in-danger level:</label>
+                        <label><input type="radio" name="time" value="8" checked>Yes</label>
+                        <label><input type="radio" name="time" value="9">Maybe</label>
+                        <label><input type="radio" name="time" value="10">No</label>
+                    </div>
+
+                    <fieldset>
+                        <div><label>additional information or comments:<br> <textarea id="msg"
+                                    name="user_msg"></textarea></label></div>
+                    </fieldset>
+
+                    <div class="button"><button type="submit">form submission button</button></div>
+
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer>

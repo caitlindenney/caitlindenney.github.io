@@ -1,5 +1,4 @@
 body {
-	min-width: 960px;
 	font-family: serif;
 	background-color: #c5cbd3;
 	padding: 0;
@@ -10,7 +9,12 @@ main {
 	text-align: center;
 	font-family: 'Gabriela', serif;
 }
-
+.box {
+	display: block;
+	margin: 10px auto;
+	padding: 15px;
+	background-color: #9CAFC5;
+}
 /*header*/
 header {
 	font-family: 'Marko One', serif;
@@ -43,6 +47,7 @@ header img {
 	margin-left: 20px;
 	font-size: .9rem;
 }
+
 
 /*nav*/
 nav {
@@ -87,6 +92,20 @@ nav {
 a:active {
 	text-decoration: underline;
 	background-color: #8d6a9f;
+}
+/*form*/
+.container{
+	width: 350px;
+	text-align: left;
+	display: flex;
+	align-content: center;
+}
+input,
+button,
+select,
+textarea {
+margin-top: 10px;
+	margin-bottom:10px;
 }
 
 /*footer*/
