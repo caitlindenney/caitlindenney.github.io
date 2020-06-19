@@ -1,0 +1,3 @@
+@media only screen and (min-width: 30em) {
+    div.cards{grid-template-columns: repeat(2, 1fr);}
+}

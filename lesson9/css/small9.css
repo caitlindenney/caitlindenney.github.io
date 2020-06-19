@@ -1,0 +1,36 @@
+div.cards {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+h1, h2{
+    text-align: center;
+    padding: 0 10px;
+     color: navy;
+}
+
+
+div.cards {
+    display: grid;
+    grid-gap: 5px;
+}
+
+div.cards section {
+    background-color: lavender;
+    text-align: center;
+    justify-self: center;
+    align-content: center;
+    border: 1px solid black;
+}
+
+div.cards section img {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto 1rem auto;
+    
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
