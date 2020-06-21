@@ -1,3 +1,73 @@
 @media only screen and (min-width: 30em) {
-    div.cards{grid-template-columns: repeat(2, 1fr);}
+	.box {
+		max-width: 500px;
+	}
+	section img {
+		width: 70%;
+		min-width: 375px;
+		margin: 0 auto 1rem auto;
+	}
+
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block;
+		/* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.boxweather {
+		display: block;
+		margin: 10px auto;
+		padding: 15px;
+		background-color: #9CAFC5;
+	}
+
+	.flex {
+		display: flex;
+		flex-flow: row wrap;
+		border-right: 1px solid #333;
+	}
+
+	.flex-col {
+		flex: 1 1 auto;
+		background-color: #709485;
+		border-bottom: 1px solid #333;
+		border-left: 1px solid #333;
+		text-align: center;
+	}
+
+	.col-head {
+		display: block;
+		padding: 5px;
+		border-bottom: 1px solid #333;
+		text-align: center;
+		font-weight: 700;
+		font-size: 1rem;
+		background-color: black;
+		color: white;
+	}
+
+	.img2 {
+		border-radius: 100px;
+		padding: 0.25rem;
+	}
+
+	.data {
+		display: block;
+		padding: 0 5px 5px;
+		font-size: 0.8rem;
+		text-align: center;
+	}
 }
