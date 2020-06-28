@@ -1,0 +1,116 @@
+body {
+	font-family: serif;
+	background-color: #c5cbd3;
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	text-align: center;
+	font-family: 'Gabriela', serif;
+}
+.box {
+	display: block;
+	margin: 10px auto;
+	padding: 15px;
+	background-color: #9CAFC5;
+}
+/*header*/
+header {
+	font-family: 'Marko One', serif;
+	background-color: #7392b7;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: black;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
+
+/*nav*/
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #1d3461;
+	color: white;
+}
+
+.navigation {
+
+	list-style-type: none;
+	margin: 0;
+
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+
+.navigation a:hover {
+	background-color: #8d6a9f;
+}
+
+.responsive li {
+	display: block;
+}
+
+a:active {
+	text-decoration: underline;
+	background-color: #8d6a9f;
+}
+/*form*/
+.container{
+	width: 350px;
+	text-align: left;
+	display: flex;
+	align-content: center;
+}
+input,
+button,
+select,
+textarea {
+margin-top: 10px;
+	margin-bottom:10px;
+}
+
+/*footer*/
+footer {
+	font-family: 'Marko One', serif;
+	background-color: #7392b7;
+	text-align: center;
+}
