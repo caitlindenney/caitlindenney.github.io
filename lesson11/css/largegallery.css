@@ -1,0 +1,97 @@
+@media only screen and (min-width: 50em) {
+  .container {
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+  }
+
+  img {
+    max-width: 290px;
+  }
+
+  .clear {
+    grid-column: 1/2;
+  }
+
+  .fog {
+    grid-column: 2/3;
+  }
+
+  .hot {
+    grid-column: 3/4;
+  }
+
+  .lightning {
+    grid-column: 1/2;
+  }
+
+  .rain {
+    grid-column: 2/3;
+  }
+
+  .snow {
+    grid-column: 3/4;
+  }
+
+  .sunny {
+    grid-column: 1/2;
+  }
+
+  .tornado {
+    grid-column: 2/3;
+  }
+
+  .windy {
+    grid-column: 3/4;
+  }
+
+
+  footer {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boxweather {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #9CAFC5;
+  }
+
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 1px solid #333;
+  }
+
+  .flex-col {
+    flex: 1 1 auto;
+    background-color: #709485;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
+  }
+
+  .col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+  }
+
+  .img2 {
+    border-radius: 100px;
+    padding: 0.25rem;
+  }
+
+  .data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
