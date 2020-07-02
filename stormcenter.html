@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Stormcenter</title>
+    <meta name="description" content="form for submitting information about the weather">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela%7cMarko+One&display=swap" rel="stylesheet">
+    <link href="css/smallform.css" rel="stylesheet">
+    <link href="css/mediumform.css" rel="stylesheet">
+    <link href="css/largeform.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img src="images/weather-logo.png" alt="logo, cloud with a quastion mark in the middle of the cloud.">
+        </picture>
+        <section class="headings">
+            <h1>Get Weather Correct</h1>
+            <div class="m">Did I Get the Weather Correct?</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation responsive">
+            <li><a class="ham" href="index.html">&#9776;Home</a></li>
+            <li><a class="ham" href="preston.html">Preston</a></li>
+            <li><a class="ham" href="soda.html">Soda Springs</a></li>
+            <li><a class="ham" href="fish.html">Fish Haven</a></li>
+            <li><a class="ham" href="stormcenter.html">Storm Center</a></li>
+            <li><a class="ham" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <script src="js/responsive.js"></script>
+
+    <main>
+        <div class="container box">
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <div><label>Full Name:<input type="text" name="full" minlength="5" pattern="[Aa-Zz]"
+                                required></label></div>
+
+                    <div><label>Email:<input type="email" name="email" placeholder="user@email.com"></label></div>
+
+                    <div><label>Phone:<input type="tel" name="phone" required></label></div>
+
+                    <div><label>Zip Code:<input type="number" name="num" required></label></div>
+
+                    <div><label>Storm Date:<input type="date" name="theDate"></label><br></div>
+
+                    <div><label>Storm Type:<input name="storm" list="stormlist"></label>
+                        <datalist id="stormlist">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </div>
+
+                    <div> <label class="flexly">Storm Severity: &nbsp;&nbsp;&nbsp;<input type="range"
+                                name="stormSeverity" value="5" min="1" max="10" step="1" list="tickmarks"
+                                oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span
+                                id="severity">5</span></label>
+                        <datalist id="tickmarks">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    </div>
+                    <script src="js/severity.js"></script>
+
+                    <div><label for="region">Storm Region:</label>
+                        <select name="region" id="region">
+                            <option selected disabled>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda Springs">Soda Springs</option>
+                            <option value="fish Haven">Fish Haven</option>
+                        </select>
+                    </div>
+
+                    <div><label>User in-danger level:</label>
+                        <label><input type="radio" name="time" value="8" checked>Yes</label>
+                        <label><input type="radio" name="time" value="9">Maybe</label>
+                        <label><input type="radio" name="time" value="10">No</label>
+                    </div>
+
+                    <fieldset>
+                        <div><label>additional information or comments:<br> <textarea id="msg"
+                                    name="user_msg"></textarea></label></div>
+                    </fieldset>
+
+                    <div class="button"><button type="submit">form submission button</button></div>
+
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2020 | Caitlin Denney | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <p>Last Updated: <span id="date"></span></p>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Gabriela,  Marko One']
+            }
+        });
+    </script>
+</body>
+
+</html>
