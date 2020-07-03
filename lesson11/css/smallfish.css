@@ -116,7 +116,7 @@ p {
 }
 
 .stats {
-	position: absolute;
+
 	top: 25px;
 	left: 50px;
 	background: radial-gradient(#eee, #4567aa);
