@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Reservations</title>
+    <meta name="description" content="The Reservations page that contains: rental agreement information and 
+    a form that collects rental details such as the date, period, rental type, number, phone number, name, 
+    email, home state or country, cruise line if applicable, and special accommodations/comments such as 
+    the need and location of a drop-off request. The form should then advance to a page that display a 
+    simple confirmation and request for deposit information.">
+    <link rel="icon" href="images/scooterfavicon.png">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merienda+One&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img id="logo" src="images/scooter.png" alt="scooter icon">
+        </picture>
+        <div class="headings">
+            <h1>Scoots</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation responsive">
+            <li><a class="ham" href="#">&#9776;menu</a></li>
+            <li><a class="ham" href="home.html">Home</a></li>
+            <li><a class="ham" href="rentals.html">Rentals</a></li>
+            <li><a class="ham" href="reservations.html">Reservations</a></li>
+            <li><a class="ham" href="tours.html">Tours</a></li>
+            <li><a class="ham" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <script src="js/responsive.js"></script>
+
+    <main>
+        <div class="box">
+            <form action="deposit.html" method="get">
+                <fieldset>
+                    <div id="fne"><label>Full Name:<input type="text" name="full" minlength="5" pattern="[Aa-Zz]"
+                                required></label></div>
+                    <div id="eml"><label>Email:<input type="email" name="email" placeholder="user@email.com"
+                                required></label></div>
+                    <div id="phe"><label>Phone:<input type="tel" name="phone" required></label></div>
+                    <div id="cou"><label>Country:<input type="text" name="full" pattern="[Aa-Zz]" required></label>
+                    </div>
+                    <div id="hs"><label>Home State:<input type="text" name="full" pattern="[Aa-Zz]" required></label>
+                    </div>
+                    <div id="sdov"><label>Start Date of Vist:<input type="date" name="theDate" required></label><br>
+                    </div>
+                    <div id="edov"><label>End Date of Vist:<input type="date" name="theDate" required></label><br></div>
+                    <div id="clyaptwn"><label>Cruise Line Your Are Possibly Traviling With Name:<br><input type="text"
+                                name="full" pattern="[Aa-Zz]"></label></div>
+                    <div id=checkbox>
+                        <p>Rental Type(s):</p>
+                        <input type="checkbox" id="Metro" name="Metro"><label for="Metro">Honda Metro Scooter</label><br>
+                        <input type="checkbox" id="Dio" name="Dio"><label for="Dio">Honda Dio Scooter</label><br>
+                        <input type="checkbox" id="PCX150" name="PCX150"><label for="PCX150">Honda PCX150
+                            Scooter</label><br>
+                        <input type="checkbox" id="Pioneer" name="Pioneer"><label for="Pioneer">Honda Pioneer
+                            ATV</label><br>
+                        <input type="checkbox" id="Wrangler4" name="Wrangler4"><label for="Wrangler4">Jeep Wrangler - 4
+                            door with a/c</label><br>
+                        <input type="checkbox" id="Wrangler2" name="Wrangler2"><label for="Wrangler2">Jeep Wrangler - 2
+                            door</label>
+                    </div>
+                    <div id=loador><label>location of a drop-off request:<br> <textarea id="msg"
+                                name="user_msg"></textarea></label></div>
+                    <div id=cos><label>comments:<br> <textarea id="msg" name="user_msg"></textarea></label></div>
+                    <div id="button2"><button type="submit">form submission button</button></div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a class="socialmedia" target="_blank" href="https://www.facebook.com/aya.love.39982631"> <img class="icon"
+                    src="images/facebook.jpg" alt="facebook"></a>
+            <a class="socialmedia" target="_blank" href="https://twitter.com/aya9145"> <img class="icon"
+                    src="images/twirrer.png" alt="instagram"></a>
+            <a class="socialmedia" target="_blank" href="https://www.instagram.com/aya.love.39982631"> <img class="icon"
+                    src="images/instagram.jpg" alt="twirrer"></a>
+        </div>
+        <div class="contact">
+            <p>email:xxxxx@xxxx.com</p>
+            <p>phone:xxx-xx-xx-xxxx-xxxx</p>
+        </div>
+        &copy; 2020 | Caitlin Denney | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        <p>Last Updated: <span id="date"></span></p>
+    </footer>
+    <script src="js/date.js"></script>
+
+</body>
+
+</html>

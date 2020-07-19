@@ -1,0 +1,295 @@
+body {
+    font-family: serif;
+    background-color: #5aa786;
+    padding: 0;
+    margin: 0;
+}
+
+main,
+h2 {
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.box {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #D7955F;
+    max-width: 1000px;
+}
+
+/*header*/
+header {
+    background-color: #8d745a;
+    font-family: 'Merienda One', cursive;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header #logo {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+/*nav*/
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #298880;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3em;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    background-color: white;
+}
+
+.responsive li {
+    display: block;
+}
+
+a:active {
+    text-decoration: underline;
+    background-color: white;
+}
+
+/*footer*/
+footer {
+    background-color: #8d745a;
+    font-family: 'Merienda One', cursive;
+    padding: 1px 15px 1px 15px;
+}
+
+.social {
+    float: right;
+}
+
+.icon {
+    width: 100px;
+}
+
+/*rentals*/
+.img {
+    max-width: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/*contact, reservations*/
+fieldset {
+    border: 2px solid black;
+}
+
+/*contact*/
+.maps {
+    display: grid;
+    text-align: center;
+
+}
+
+.map1 {
+    grid-row: 1/2;
+}
+
+.map2 {
+    grid-row: 2/3;
+    padding-left: 100px;
+}
+
+.map3 {
+    grid-row: 1/2;
+}
+
+.map4 {
+    grid-row: 2/3;
+    padding-left: 105px;
+}
+
+#fn {
+    padding-left: 285px;
+    margin-bottom: 10px;
+}
+
+#em {
+    padding-left: 323px;
+    margin-bottom: 10px;
+}
+
+#ph {
+    padding-left: 318px;
+    margin-bottom: 10px;
+}
+
+#co {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#button {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*reservations*/
+#fne {
+    padding-left: 280px;
+    margin-bottom: 10px;
+}
+
+#eml {
+    padding-left: 317px;
+    margin-bottom: 10px;
+}
+
+#phe {
+    padding-left: 313px;
+    margin-bottom: 10px;
+}
+
+#cou {
+    padding-left: 297px;
+    margin-bottom: 10px;
+}
+
+#hs {
+    padding-left: 269px;
+    margin-bottom: 10px;
+}
+
+#sdov {
+    padding-left: 226.5px;
+    margin-bottom: 10px;
+}
+
+#edov {
+    padding-left: 232px;
+    margin-bottom: 10px;
+}
+
+#clyaptwn {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#checkbox {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#loador {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#cos {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#button2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*home*/
+.banner {
+    background-color: #5aa786;
+}
+    
+#stats {
+    text-align: center;
+}
+
+.boxweather {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 1px solid black;
+}
+
+.flex-col {
+    flex: 1 1 auto;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+.col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.img2 {
+    border-radius: 100px;
+    padding: 0.25rem;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.stats {
+    position: absolute;
+}
